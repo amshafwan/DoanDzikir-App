@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BelajarDoaDanDzikirApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".model.DataDzikirDoa"
+            android:exported="false"
+            android:theme="@style/Theme.MyTheme"/>
+        <activity
+            android:name=".ui.detail.DetailArtikelActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyTheme"/>
+        <activity
+            android:name=".ui.detail.DzikirPetangActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyTheme"/>
+        <activity
+            android:name=".ui.detail.DzikirPagiActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyTheme"/>
+        <activity
+            android:name=".ui.DzikirPagiDanPetangActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyTheme"/>
+        <activity
+            android:name=".ui.DzikirDanDoaHarianActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyTheme"/>
+        <activity
+            android:name=".ui.DzikirSetiapSaatActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyTheme"/>
+        <activity
+            android:name=".ui.SunnahQouliyahActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyTheme"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SplashScreen.DoaDanDzikir">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
